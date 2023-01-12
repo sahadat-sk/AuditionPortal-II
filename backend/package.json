@@ -15,7 +15,6 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
-    "nser": "^1.19.0",
     "cloudinary": "^1.27.1",
     "cookie-parser": "^1.4.5",
     "cookie-session": "^1.4.0",
