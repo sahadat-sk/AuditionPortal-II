@@ -7,14 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "pm2 start app.js",
     "makemigration": "./node_modules/sequelize-auto-migrations-v2/bin/makemigration.js",
-    "runmigration": "./node_modules/sequelize-auto-migrations-v2/bin/runmigration.js"
+    "runmigration": "./node_modules/sequelize-auto-migrations-v2/bin/runmigration.js",
+    "migrate": "npx sequelize-cli db:migrate"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.19.0",
+    "bcrypt": "^5.1.0",
+    "nser": "^1.19.0",
     "cloudinary": "^1.27.1",
     "cookie-parser": "^1.4.5",
     "cookie-session": "^1.4.0",
@@ -38,7 +39,7 @@
     "pg": "^8.7.1",
     "pg-hstore": "^2.3.4",
     "pgtools": "^0.3.2",
-    "sequelize": "^6.8.0",
+    "sequelize": "^6.28.0",
     "sequelize-auto-migrations-v2": "^1.2.1",
     "sequelize-cli": "^6.4.1"
   }

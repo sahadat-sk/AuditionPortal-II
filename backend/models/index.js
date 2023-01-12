@@ -3,8 +3,11 @@ const { DataTypes } = require('sequelize');
 require('dotenv').config();
 const env = process.env.NODE_ENV || 'development';
 const config = require(__dirname + '/../config/config.json')[env];
-const sequelize = new Sequelize(config.database,config.username,config.password,config) 
-//const sequelize = new Sequelize(process.env.ELEPHANTSQL);
+const sequelize = new Sequelize(config.database,config.username,config.password,config)
+// console.log(process.env.ELEPHANTSQL);
+// const sequelize = new Sequelize(
+//     "postgres://aobatahs:XEo3_QuXZmXx5-JS_Em9rjGDtOMhHRR8@mel.db.elephantsql.com/aobatahs"
+// );
 const models = [
   require('./users')(sequelize),
   require('./roundmodel')(sequelize),
